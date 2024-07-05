@@ -1,14 +1,18 @@
 const express = require("express");
 const cors = require('cors');
-const app = express();
-const path = require("path");
 const bodyParser = require("body-parser");
+const path = require("path");
 const env = require("./config/env");
 const corsOptions = require("./config/cors");
-const userValidation = require("./validations/userValidation");
 const configViewEngine = require("./config/viewEngines");
+const initWebRoutes = require("./routes");
 const errorHandlingMiddleware = require("./middlewares/errorHandlingMiddleware");
 
+
+//init app
+const app = express();
+
+//define host,port and build mode
 const hostname = env.LOCAL_APP_HOST;
 const port = env.LOCAL_APP_PORT;
 const build_mode = env.BUILD_MODE;
@@ -27,13 +31,16 @@ app.use(bodyParser.json());
 //configs cors
 app.use(cors(corsOptions))
 
-// app.post("/", userValidation.userValidation, async (req, res) => {
 
-
-//   return res.status(200).json({ message: "Hello Trong Hieu" });
-// });
-
+//configs routes
+initWebRoutes(app);
   
+
+
+
+
+
+
 //config error handling middleware
 app.use(errorHandlingMiddleware);
 if (build_mode === "dev") {
