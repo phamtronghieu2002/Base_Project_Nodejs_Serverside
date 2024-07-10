@@ -24971,6 +24971,7 @@
 .fas {
   font-family: Font Awesome\6 Pro;
   font-weight: 900;
+  margin-right: 10px;
 }
 :host,
 :root {
