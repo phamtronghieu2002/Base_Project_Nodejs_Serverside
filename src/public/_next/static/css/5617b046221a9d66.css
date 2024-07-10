@@ -1544,8 +1544,10 @@ button.swiper-pagination-bullet {
   display: none;
 }
 .main-header-two .sticky-menu {
-  background: var(--thm-green);
+  background: var(--thm-bg-white);
 }
+
+
 .main-header-two .header-contact-info ul li .icon-box i,
 .main-header-two .header-contact-info ul li p,
 .main-header-two .header-contact-info ul li p a,
@@ -1559,10 +1561,17 @@ button.swiper-pagination-bullet {
 .main-header-two .header-social-links ul li a:hover {
   color: var(--thm-teal);
 }
+
+.main-header-two .sticky-menu  .main-header-one__bottom{
+  box-shadow: none ;
+
+}
 .main-header-two .main-header-one__bottom {
   background: var(--thm-white);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+
 .main-header-two .main-header-one__bottom .navbar-wrap ul li a {
   color: black
 }
@@ -1825,7 +1834,7 @@ h6 {
   position: relative;
   border-radius: 0 180px 0 200px;
 }
-.br-style1:before {
+/* .br-style1:before {
   content: "";
   position: absolute;
   height: 100%;
@@ -1834,7 +1843,7 @@ h6 {
   border-radius: 0 200px;
   top: -30px;
   left: 30px;
-}
+} */
 .br-style2 {
   border-radius: 10px !important;
 }
@@ -2027,9 +2036,9 @@ label {
   margin: 0 auto;
 }
 .container {
-  max-width: 1320px;
+  /* max-width: 1320px;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 12px; */
 }
 .row {
   --bs-gutter-x: 24px;
