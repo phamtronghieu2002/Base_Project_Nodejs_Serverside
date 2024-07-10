@@ -152,6 +152,7 @@
 }
 /* mobile */
 @media (max-width: 767px) {
+
   .menu-area .navbar-wrap {
     display: none !important;
   }
@@ -211,6 +212,13 @@
 }
 /* TABLET end mobile */
 @media (max-width: 1199px) {
+  .sec-title{
+    text-align: center;
+  }
+  .owl-carousel.owl-drag .owl-item{
+      display: flex;
+      justify-content: center;
+  }
   .menu-area .mobile-nav-toggler {
     display: flex;
     padding: 3px 0;
@@ -516,10 +524,10 @@
     font-size: 42px;
   }
   .hero-ptb {
-    padding: 180px 0 90px;
+    padding: 143px 0 90px;
   }
   .hero-content h1.hero-title {
-    font-size: 42px;
+    font-size: 38px;
   }
   .br-style1,
   .br-style1:before {
