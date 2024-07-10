@@ -12,6 +12,7 @@ const initWebRoutes = (app) => {
     app.use("/news", newsRoutes);
     app.use("/contact", contactRoutes);
     app.use("/product", productRoutes);
+    app.use("/", homeRoutes);
 };
 
 
