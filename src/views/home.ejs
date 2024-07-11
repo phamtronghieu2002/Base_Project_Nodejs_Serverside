@@ -5,12 +5,25 @@
 <head>
   <meta charset="ISO-8859-1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/_next/static/css/style.css" />
 
+  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- carousel -->
+  <link rel="stylesheet" href="/plugins/owlCarousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/plugins/owlCarousel/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/_next/static/css/style.css" />
   <title>TDC: Giám sát hành trình 5G-GPS</title>
   <meta name="description"
     content="Itco Nextjs 14 Template for agencies, businesses, consulting firms, creative ventures, cybersecurity providers, data management specialists, digital agencies, IT services, IT solutions providers, SaaS companies, software developers, startups, and technology service providers." />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x31" />
   <meta name="next-size-adjust" />
 
   <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -21,9 +34,11 @@
     <i class="fa-solid fa-angles-up"></i>
   </button>
   <div class="fix">
-    <!-- <div id="preloader" style="display: block"><div id="loader"></div></div> -->
+    <div id="preloader" style="display: block">
+      <div id="loader"></div>
+    </div>
     <%- include('./particals/header.ejs') %>
-      <section class="hero-sec2 bg-light-greem hero-ptb">
+      <section class="hero-sec2 bg-light-greem hero-ptb scroll-snap-center">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -32,11 +47,12 @@
                 <h1 class="hero-title tx-white">
                   Giải Pháp Tối Ưu Cho Ngành Vận Tải
                 </h1>
-                <p>
-                  80% lỗi mất tín hiệu do sim vật lý gây ra (theo CSKH thống
-                  kê).Thiết bị giám sát hành trình 5G GPS tiên phong công nghệ
-                  eSim xóa bỏ những vấn đề khó khăn trong quản lý, vận hành vận
-                  tải.
+                <p style="text-align: justify">
+                  80% lỗi mất tín hiệu do sim vật lý gây ra
+                  (theo CSKH thống kê).Thiết bị giám sát hành
+                  trình 5G GPS tiên phong công nghệ eSim xóa
+                  bỏ những vấn đề khó khăn trong quản lý, vận
+                  hành vận tải.
                 </p>
                 <div class="hero-btn-area">
                   <a class="thm-btn" href="about.html"><span class="txt">Xem Thêm</span></a><a
@@ -54,736 +70,541 @@
             </div>
           </div>
         </div>
-  </div>
-  </section>
-  <section class="service-sec2 sec-ptb">
-    <div class="container">
-      <div class="row">
-        <div class="offset-lg-3 col-lg-6">
-          <div class="sec-content text-center mb-5">
-            <h6 class="sec-sub-title">What We Do</h6>
-            <h2 class="sec-title">Services That Help You Grow</h2>
+      </section>
+
+      <section class="service-sec2 sec-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+              <div class="sec-content text-center mb-5">
+                <h6 class="sec-sub-title">What We Do</h6>
+                <h2 class="sec-title">Services That Help You Grow</h2>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="single-service-style2 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <div class="img-box">
-              <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1" class="h-h-100"
-                style="color: transparent" srcset="
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service-style2 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="img-box">
+                  <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1"
+                    class="h-h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice1.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice1.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/service106b2.png?url=%2Fassets%2Fimages%2Fservice%2Fservice1.png&amp;w=1080&amp;q=75" />
-            </div>
-            <div class="content-box d-flex">
-              <div class="single-service-content">
-                <h5>
-                  <a href="service-details.html">Content Management</a>
-                </h5>
-                <p>
-                  We focus on the best practices it solutions and for
-                  services.
-                </p>
-                <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
+                    src="/_next/service106b2.png?url=%2Fassets%2Fimages%2Fservice%2Fservice1.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="content-box d-flex">
+                  <div class="single-service-content">
+                    <h5>
+                      <a href="service-details.html">Content Management</a>
+                    </h5>
+                    <p>
+                      We focus on the best practices it solutions and for
+                      services.
+                    </p>
+                    <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
+                  </div>
+                  <div class="single-service-icon">
+                    <i class="flaticon-content-management"></i>
+                  </div>
+                </div>
               </div>
-              <div class="single-service-icon">
-                <i class="flaticon-content-management"></i>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single-service-style2 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <div class="img-box">
-              <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1" class="h-h-100"
-                style="color: transparent" srcset="
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service-style2 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="img-box">
+                  <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1"
+                    class="h-h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice2.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice2.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/service2e7a6.png?url=%2Fassets%2Fimages%2Fservice%2Fservice2.png&amp;w=1080&amp;q=75" />
-            </div>
-            <div class="content-box d-flex">
-              <div class="single-service-content">
-                <h5>
-                  <a href="service-details.html">Information Security</a>
-                </h5>
-                <p>
-                  We focus on the best practices it solutions and for
-                  services.
-                </p>
-                <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
+                    src="/_next/service2e7a6.png?url=%2Fassets%2Fimages%2Fservice%2Fservice2.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="content-box d-flex">
+                  <div class="single-service-content">
+                    <h5>
+                      <a href="service-details.html">Information Security</a>
+                    </h5>
+                    <p>
+                      We focus on the best practices it solutions and for
+                      services.
+                    </p>
+                    <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
+                  </div>
+                  <div class="single-service-icon">
+                    <i class="flaticon-security"></i>
+                  </div>
+                </div>
               </div>
-              <div class="single-service-icon">
-                <i class="flaticon-security"></i>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single-service-style2 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-            <div class="img-box">
-              <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1" class="h-h-100"
-                style="color: transparent" srcset="
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service-style2 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div class="img-box">
+                  <img alt="service" loading="lazy" width="416" height="250" decoding="async" data-nimg="1"
+                    class="h-h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice3.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fservice%2Fservice3.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/service3bf87.png?url=%2Fassets%2Fimages%2Fservice%2Fservice3.png&amp;w=1080&amp;q=75" />
-            </div>
-            <div class="content-box d-flex">
-              <div class="single-service-content">
-                <h5>
-                  <a href="service-details.html">Software Development</a>
-                </h5>
-                <p>
-                  We focus on the best practices it solutions and for
-                  services.
-                </p>
-                <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
-              </div>
-              <div class="single-service-icon">
-                <i class="flaticon-software-development"></i>
+                    src="/_next/service3bf87.png?url=%2Fassets%2Fimages%2Fservice%2Fservice3.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="content-box d-flex">
+                  <div class="single-service-content">
+                    <h5>
+                      <a href="service-details.html">Software Development</a>
+                    </h5>
+                    <p>
+                      We focus on the best practices it solutions and for
+                      services.
+                    </p>
+                    <a class="read-more" href="service-details.html">Read More <i class="flaticon-right-arrow"></i></a>
+                  </div>
+                  <div class="single-service-icon">
+                    <i class="flaticon-software-development"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="about-sec about-sec2 sec-ptb bg-light-greem">
-    <div class="container">
-      <div class="row flex-row-reverse">
-        <h4 class="sec-title sec-title-mobile">
-          THIẾT BỊ GIÁM SÁT VỚI ESIM tự hào tiên phong XÓA BỎ sim cứng
-        </h4>
-        <div class="col-lg-6 d-flex align-items-center">
-          <div class="sec-images sec-img-style col-right ">
-            <div class="product-image">
-              <img src="/_assets/images/product/prd_main.png">
-            </div>
-            <a href="https://app.taixecongnghe.com/app" style="display: flex;justify-content: center;">
-              <div class="app-info-group">
-                <div class="app-info-qr-code">
-                  <img src="/_assets/images/product/qr_code.png">
+      </section>
+      <section class="about-sec about-sec2 sec-ptb bg-light-greem">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <h4 class="sec-title sec-title-mobile">
+              THIẾT BỊ GIÁM SÁT VỚI ESIM tự hào tiên phong XÓA BỎ sim cứng
+            </h4>
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="sec-images sec-img-style col-right ">
+                <div class="product-image">
+                  <img src="/_assets/images/product/prd_main.png">
                 </div>
-                <div class="app-info-store-link">
-                  <img src="/_assets/images/product/appstore0.png">
-                  <img src="/_assets/images/product/googleplay0.png">
-                </div>
-              </div>
-            </a>
-            <!-- </div> -->
-            <!-- <button class="button-section-1 animate__animated animate__fadeInUp button-section-2-inner-img">Mua ngay</button> -->
-            <!-- <div class="sec-img-info d-flex flex-column justify-content-center align-items-center wow fadeInRight"
+                <a href="https://app.taixecongnghe.com/app" style="display: flex;justify-content: center;">
+                  <div class="app-info-group">
+                    <div class="app-info-qr-code">
+                      <img src="/_assets/images/product/qr_code.png">
+                    </div>
+                    <div class="app-info-store-link">
+                      <img src="/_assets/images/product/appstore0.png">
+                      <img src="/_assets/images/product/googleplay0.png">
+                    </div>
+                  </div>
+                </a>
+                <!-- </div> -->
+                <!-- <button class="button-section-1 animate__animated animate__fadeInUp button-section-2-inner-img">Mua ngay</button> -->
+                <!-- <div class="sec-img-info d-flex flex-column justify-content-center align-items-center wow fadeInRight"
                 data-wow-delay="0.5s" data-wow-duration="1500ms">
                 <span class="year-experience">25+</span>
                 <p>Years Of Experience</p>
               </div> -->
-          </div>
-        </div>
-        <div class="col-lg-6 tab-col-gap wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-          <div class="sec-content">
-            <h4 class="sec-title sec-title-none">
-              THIẾT BỊ GIÁM SÁT VỚI ESIM - tự hào tiên phong XÓA BỎ sim cứng
-            </h4>
-            <p class="sec-text">
-              80% LỖI MẤT TÍN HIỆU CỦA THIẾT BỊ GSHT LÀ DO SIM VẬT LÝ
-            </p>
-            <h5>5G GPS với ESIM</h5>
-            <ul class="sec-list-item">
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Không còn lo lắng bị phạt vì phương tiện không truyền dữ liệu theo quy định.
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Giám sát liên tục, nâng cao vai trò quản lý giám sát
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Dễ dàng thay đổi nhà mạng hay gói cước phù hợp với nhu cầu sử dụng.
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Là giải pháp hiệu quả khi thay thế các thiết bị GSHT 2G trước đây sắp bị cắt bỏ.
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Sản phẩm hợp chuẩn, hợp quy theo QCVN31, QCVN117, QCVN55.
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                Chính sách hậu mãi chu đáo, đội ngũ kỹ thuật hỗ trợ 24/24.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="newslatter-sec newslatter-sec2 bg-green">
-    <div class="container">
-      <div class="row aximo_screenfix_right">
-        <div class="col-lg-5 d-flex align-items-center">
-          <div class="sec-content">
-            <h2 class="sec-title">CÔNG NGHỆ VẬN TẢI ƯU VIỆT</h2>
-            <p class="sec-text">
-              It is a long established fact that a reader will be distracted
-              by the readable content of a page when looking at its layout.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-7 p-0">
-          <div class="video-sec d-flex">
-            <video width="auto" controls muted loop class="video-background" id="video">
-              <source src="/_assets/video/video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="thumb-nail-video" id="thumb-nail-video">
-              <div class="video-sec-overlay d-flex align-items-center justify-content-center">
-                <a href="#" class="play-btn" id="play-btn"><i class="flaticon-play-button-arrowhead"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6 tab-col-gap wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+              <div class="sec-content">
+                <h4 class="sec-title sec-title-none">
+                  THIẾT BỊ GIÁM SÁT VỚI ESIM - tự hào tiên phong XÓA BỎ sim cứng
+                </h4>
+                <p class="sec-text">
+                  80% LỖI MẤT TÍN HIỆU CỦA THIẾT BỊ GSHT LÀ DO SIM VẬT LÝ
+                </p>
+                <h5>5G GPS với ESIM</h5>
+                <ul class="sec-list-item">
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Không còn lo lắng bị phạt vì phương tiện không truyền dữ liệu theo quy định.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Giám sát liên tục, nâng cao vai trò quản lý giám sát
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Dễ dàng thay đổi nhà mạng hay gói cước phù hợp với nhu cầu sử dụng.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Là giải pháp hiệu quả khi thay thế các thiết bị GSHT 2G trước đây sắp bị cắt bỏ.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Sản phẩm hợp chuẩn, hợp quy theo QCVN31, QCVN117, QCVN55.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>
+                    Chính sách hậu mãi chu đáo, đội ngũ kỹ thuật hỗ trợ 24/24.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="project-sec2 sec-ptb">
-    <div class="container">
-      <div class="row">
-        <div class="offset-lg-3 col-lg-6">
-          <div class="sec-content text-center mb-5">
-            <h6 class="sec-sub-title">Latest Our Projects</h6>
-            <h2 class="sec-title">Some Of Our Work</h2>
+      </section>
+      <section class="newslatter-sec newslatter-sec2 bg-green">
+        <div class="container">
+          <div class="row aximo_screenfix_right">
+            <div class="col-lg-5 d-flex align-items-center">
+              <div class="sec-content">
+                <h2 class="sec-title">CÔNG NGHỆ VẬN TẢI ƯU VIỆT</h2>
+                <p class="sec-text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7 p-0">
+              <div class="video-sec d-flex">
+                <video width="auto" controls muted loop class="video-background" id="video">
+                  <source src="/_assets/video/video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="thumb-nail-video" id="thumb-nail-video">
+                  <div class="video-sec-overlay d-flex align-items-center justify-content-center">
+                    <a href="#" class="play-btn" id="play-btn"><i class="flaticon-play-button-arrowhead"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="0ms"
-            data-wow-duration="1500ms">
-            <div class="project-img">
-              <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1" class="h-100"
-                style="color: transparent" srcset="
+      </section>
+      <section class="project-sec2 sec-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+              <div class="sec-content text-center mb-5">
+                <h6 class="sec-sub-title">Latest Our Projects</h6>
+                <h2 class="sec-title">Some Of Our Work</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="0ms"
+                data-wow-duration="1500ms">
+                <div class="project-img">
+                  <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1"
+                    class="h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject4.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject4.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/project420c2.png?url=%2Fassets%2Fimages%2Fproject%2Fproject4.png&amp;w=1080&amp;q=75" />
+                    src="/_next/project420c2.png?url=%2Fassets%2Fimages%2Fproject%2Fproject4.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="project-title">
+                  <h5>
+                    <a href="project-details.html">Software Development</a>
+                  </h5>
+                  <span class="project-cat">Portfolio Home - Futuristic</span>
+                </div>
+                <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
+              </div>
             </div>
-            <div class="project-title">
-              <h5>
-                <a href="project-details.html">Software Development</a>
-              </h5>
-              <span class="project-cat">Portfolio Home - Futuristic</span>
-            </div>
-            <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="300ms"
-            data-wow-duration="1500ms">
-            <div class="project-img">
-              <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1" class="h-100"
-                style="color: transparent" srcset="
+            <div class="col-md-6 col-lg-4">
+              <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="300ms"
+                data-wow-duration="1500ms">
+                <div class="project-img">
+                  <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1"
+                    class="h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject5.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject5.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/project51f56.png?url=%2Fassets%2Fimages%2Fproject%2Fproject5.png&amp;w=1080&amp;q=75" />
+                    src="/_next/project51f56.png?url=%2Fassets%2Fimages%2Fproject%2Fproject5.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="project-title">
+                  <h5><a href="project-details.html">Data processing</a></h5>
+                  <span class="project-cat">Portfolio Home - Futuristic</span>
+                </div>
+                <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
+              </div>
             </div>
-            <div class="project-title">
-              <h5><a href="project-details.html">Data processing</a></h5>
-              <span class="project-cat">Portfolio Home - Futuristic</span>
-            </div>
-            <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="600ms"
-            data-wow-duration="1500ms">
-            <div class="project-img">
-              <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1" class="h-100"
-                style="color: transparent" srcset="
+            <div class="col-md-6 col-lg-4">
+              <div class="single-project single-project-style2 wow fadeInUp" data-wow-delay="600ms"
+                data-wow-duration="1500ms">
+                <div class="project-img">
+                  <img alt="project" loading="lazy" width="416" height="400" decoding="async" data-nimg="1"
+                    class="h-100" style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject6.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fproject%2Fproject6.png&amp;w=1080&amp;q=75 2x
                     "
-                src="/_next/project6710d.png?url=%2Fassets%2Fimages%2Fproject%2Fproject6.png&amp;w=1080&amp;q=75" />
+                    src="/_next/project6710d.png?url=%2Fassets%2Fimages%2Fproject%2Fproject6.png&amp;w=1080&amp;q=75" />
+                </div>
+                <div class="project-title">
+                  <h5><a href="project-details.html">Digital Marketing</a></h5>
+                  <span class="project-cat">Portfolio Home - Futuristic</span>
+                </div>
+                <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
+              </div>
             </div>
-            <div class="project-title">
-              <h5><a href="project-details.html">Digital Marketing</a></h5>
-              <span class="project-cat">Portfolio Home - Futuristic</span>
-            </div>
-            <a class="project-btn" href="home-2.html"><i class="flaticon-right-arrow"></i></a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="team-sec sec-ptb bg-light-greem">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="sec-content">
-            <h6 class="sec-sub-title">Our Team Members</h6>
-            <h2 class="sec-title">Building A Smarter future Through IT</h2>
+      </section>
+      <section class="team-sec sec-ptb bg-light-greem scroll-snap-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sec-content">
+                <h2 class="sec-title text-center">Chứng nhận</h2>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="team-slider position-relative pt-5">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam1.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam1.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team138e7.png?url=%2Fassets%2Fimages%2Fteam%2Fteam1.png&amp;w=828&amp;q=75" />
+          <div class="row">
+            <div class="col">
+              <div class="team-slider position-relative pt-2">
+                <div class="certificate-slider">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn1.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn1.png" alt="Image 1">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn2.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn2.png" alt="Image 2">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 3">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn6.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 4">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn6.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 5">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 6">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 7">
+                        </a>
+                      </div>
                     </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Edoardo Romussi</h3>
-                      </a><span class="member-cat">Ui/Ux Designer</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam2.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam2.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team2fac2.png?url=%2Fassets%2Fimages%2Fteam%2Fteam2.png&amp;w=828&amp;q=75" />
-                    </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Jessica James</h3>
-                      </a><span class="member-cat">Marketing Coordinator</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam3.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam3.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team37702.png?url=%2Fassets%2Fimages%2Fteam%2Fteam3.png&amp;w=828&amp;q=75" />
-                    </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Adrian Williams</h3>
-                      </a><span class="member-cat">Web Designer</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam4.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam4.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team40926.png?url=%2Fassets%2Fimages%2Fteam%2Fteam4.png&amp;w=828&amp;q=75" />
-                    </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Laci Pletcher</h3>
-                      </a><span class="member-cat">Process Analyst</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam5.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam5.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team547b7.png?url=%2Fassets%2Fimages%2Fteam%2Fteam5.png&amp;w=828&amp;q=75" />
-                    </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Alex Brown</h3>
-                      </a><span class="member-cat">Co-Founder</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item single-team">
-                    <div class="member-img">
-                      <img alt="team" loading="lazy" width="412" height="366" decoding="async" data-nimg="1"
-                        class="h-100" style="color: transparent" srcset="
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam6.png&amp;w=640&amp;q=75 1x,
-                              //_next/image?url=%2Fassets%2Fimages%2Fteam%2Fteam6.png&amp;w=828&amp;q=75 2x
-                            "
-                        src="/_next/team6dce7.png?url=%2Fassets%2Fimages%2Fteam%2Fteam6.png&amp;w=828&amp;q=75" />
-                    </div>
-                    <ul class="team-social">
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://facebook.com/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://twitter.com/"><i
-                            class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://instagram.com/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a class="icon-1" target="_blank" href="http://linkedin.com/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                    <div class="member-info">
-                      <a href="index.html">
-                        <h3 class="member-name">Rebecca Davis</h3>
-                      </a><span class="member-cat">Web Developer</span>
-                    </div>
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev  swiper-button"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="owl-nav">
-              <a href="#" class="owl-prev"><i class="flaticon-left-arrow"></i></a><a href="#" class="owl-next"><i
-                  class="flaticon-right-arrow"></i></a>
+      </section>
+      <section class="brand-sec sec-ptb bg-green">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-2 col-md-8 offset-lg-4 col-lg-4">
+              <div class="sec-content text-center mb-5">
+                <h5 class="brand-text">
+                  We have more than <span>270+</span> Happy Customers with
+                  satisfaction
+                </h5>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="brand-sec sec-ptb bg-green">
-    <div class="container">
-      <div class="row">
-        <div class="offset-md-2 col-md-8 offset-lg-4 col-lg-4">
-          <div class="sec-content text-center mb-5">
-            <h5 class="brand-text">
-              We have more than <span>270+</span> Happy Customers with
-              satisfaction
-            </h5>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="brand-slider owl-carousel owl-theme">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand1.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand2.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand3.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand4.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand5.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand1.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand2.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand3.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand4.png" alt="brand" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item d-flex justify-content-center">
-                    <img src="assets/images/brand/brand5.png" alt="brand" />
+          <div class="row">
+            <div class="col">
+              <div class="brand-slider owl-carousel owl-theme">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand1.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand2.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand3.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand4.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand5.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand1.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand2.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand3.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand4.png" alt="brand" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item d-flex justify-content-center">
+                        <img src="assets/images/brand/brand5.png" alt="brand" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="faq-sec sec-ptb">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center flex-column">
-          <div class="sec-content mb-5">
-            <h6 class="sec-sub-title">FAQs</h6>
-            <h2 class="sec-title">Looking For Answers?</h2>
-          </div>
-          <div id="accordion" class="accordion-container wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <h4 class="accordion-title open">
-              What Does Having Managed Your Services Provider?
-            </h4>
-            <div class="ReactCollapse--collapse" style="height: auto; overflow: initial" aria-hidden="false">
-              <div class="ReactCollapse--content">
-                <div class="accordion-content">
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation.
-                  </p>
+      </section>
+      <section class="faq-sec sec-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center flex-column">
+              <div class="sec-content mb-5">
+                <h6 class="sec-sub-title">FAQs</h6>
+                <h2 class="sec-title">Looking For Answers?</h2>
+              </div>
+              <div id="accordion" class="accordion-container wow fadeInUp" data-wow-delay="0ms"
+                data-wow-duration="1500ms">
+                <h4 class="accordion-title open">
+                  What Does Having Managed Your Services Provider?
+                </h4>
+                <div class="ReactCollapse--collapse" style="height: auto; overflow: initial" aria-hidden="false">
+                  <div class="ReactCollapse--content">
+                    <div class="accordion-content">
+                      <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="accordion-title">
+                  What You About Say Your Business Palnning ?
+                </h4>
+                <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
+                  <div class="ReactCollapse--content">
+                    <div class="accordion-content">
+                      <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="accordion-title">
+                  You Have a Unique Way Of The Working in IT?
+                </h4>
+                <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
+                  <div class="ReactCollapse--content">
+                    <div class="accordion-content">
+                      <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="accordion-title">
+                  What Types Of Systems Do You Support ?
+                </h4>
+                <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
+                  <div class="ReactCollapse--content">
+                    <div class="accordion-content">
+                      <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <h4 class="accordion-title">
-              What You About Say Your Business Palnning ?
-            </h4>
-            <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
-              <div class="ReactCollapse--content">
-                <div class="accordion-content">
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <h4 class="accordion-title">
-              You Have a Unique Way Of The Working in IT?
-            </h4>
-            <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
-              <div class="ReactCollapse--content">
-                <div class="accordion-content">
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <h4 class="accordion-title">
-              What Types Of Systems Do You Support ?
-            </h4>
-            <div class="ReactCollapse--collapse" style="height: 0px; overflow: hidden" aria-hidden="true">
-              <div class="ReactCollapse--content">
-                <div class="accordion-content">
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 tab-col-gap">
-          <div class="sec-images wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1500ms">
-            <div class="sec-img-one">
-              <img alt="faq" loading="lazy" width="560" height="662" decoding="async" data-nimg="1" class="h-100"
-                style="color: transparent" srcset="
+            <div class="col-lg-6 tab-col-gap">
+              <div class="sec-images wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1500ms">
+                <div class="sec-img-one">
+                  <img alt="faq" loading="lazy" width="560" height="662" decoding="async" data-nimg="1" class="h-100"
+                    style="color: transparent" srcset="
                       //_next/image?url=%2Fassets%2Fimages%2Fabout%2Ffaq.png&amp;w=640&amp;q=75  1x,
                       //_next/image?url=%2Fassets%2Fimages%2Fabout%2Ffaq.png&amp;w=1200&amp;q=75 2x
                     " src="/_next/faq468c.png?url=%2Fassets%2Fimages%2Fabout%2Ffaq.png&amp;w=1200&amp;q=75" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonial-sec2 sec-ptb bg-green">
-    <div class="container">
-      <div class="row">
-        <div class="offset-lg-3 col-lg-6">
-          <div class="sec-content text-center mb-5">
-            <h2 class="sec-title">Chứng chỉ chứng nhận</h2>
+      </section>
+      <section class="testimonial-sec2 sec-ptb bg-green">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+              <div class="sec-content text-center mb-5">
+                <h2 class="sec-title">Chứng chỉ chứng nhận</h2>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="offset-lg-1 col-lg-10">
-          <div class="testimonial-slider2">
-            <div class="your-class">
-              <!-- <div><img src="http://taixecongnghe.com/static/images/interface/cn1.png" alt="Image 1"></div>
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+              <div class="testimonial-slider2">
+                <div class="your-class">
+                  <!-- <div><img src="http://taixecongnghe.com/static/images/interface/cn1.png" alt="Image 1"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn2.png" alt="Image 2"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 3"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 1"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 2"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 3"></div>
                 <div><img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 1"></div> -->
-            </div>
-            <div id="dots" class="glider-dots"></div>
-            <!-- <div class="owl-nav" style="z-index: 9">
+                </div>
+                <div id="dots" class="glider-dots"></div>
+                <!-- <div class="owl-nav" style="z-index: 9">
                 <a href="#" class="owl-prev"><i class="flaticon-left-arrow"></i></a><a href="#" class="owl-next"><i
                     class="flaticon-right-arrow"></i></a>
               </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="blog-sec sec-ptb">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="sec-content mb-5">
-            <h2 class="sec-title">
-              Tin tức
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="blog-left-box blog-item me-lg-5 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-            <div class="img-box">
-              <img alt="blog" loading="lazy" width="588" height="569" decoding="async" data-nimg="1" class="h-100"
-                src="https://mobicam.vn/assets/images/sanpham.jpg" />
-            </div>
-            <div class="content-box">
-              <div class="meta-box">
-                <div class="meta-info d-flex">
-                  <div class="icon">
-                    <i class="flaticon-calendar"></i>
-                  </div>
-                  <span><a href="index.html">09/07/2024</a></span>
-                </div>
-              </div>
-              <div class="title-box">
-                <h3>
-                  <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
-                </h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="blog-sidebar-box">
-            <ul>
-              <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
+      </section>
+      <section class="blog-sec sec-ptb">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="sec-content mb-5">
+                <h2 class="sec-title">
+                  Tin tức
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="blog-left-box blog-item me-lg-5 wow fadeInLeft" data-wow-delay="500ms"
                 data-wow-duration="1500ms">
                 <div class="img-box">
-                  <img alt="blog" loading="lazy" width="236" height="174" decoding="async" data-nimg="1" class="h-100"
+                  <img alt="blog" loading="lazy" width="588" height="569" decoding="async" data-nimg="1" class="h-100"
                     src="https://mobicam.vn/assets/images/sanpham.jpg" />
                 </div>
                 <div class="content-box">
@@ -800,72 +621,104 @@
                       <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
                     </h3>
                   </div>
-                  <div class="btn-box">
-                    <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
-                        class="flaticon-right-arrow"></i></a>
-                  </div>
                 </div>
-              </li>
-              <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
-                data-wow-duration="1500ms">
-                <div class="img-box">
-                  <img alt="blog" loading="lazy" width="236" height="174" decoding="async" data-nimg="1" class="h-100"
-                    src="https://mobicam.vn/assets/images/sanpham.jpg" />
-                </div>
-                <div class="content-box">
-                  <div class="meta-box">
-                    <div class="meta-info d-flex">
-                      <div class="icon">
-                        <i class="flaticon-calendar"></i>
-                      </div>
-                      <span><a href="index.html">09/07/2024</a></span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="blog-sidebar-box">
+                <ul>
+                  <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
+                    data-wow-duration="1500ms">
+                    <div class="img-box">
+                      <img alt="blog" loading="lazy" width="236" height="174" decoding="async" data-nimg="1"
+                        class="h-100" src="https://mobicam.vn/assets/images/sanpham.jpg" />
                     </div>
-                  </div>
-                  <div class="title-box">
-                    <h3>
-                      <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
-                    </h3>
-                  </div>
-                  <div class="btn-box">
-                    <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
-                        class="flaticon-right-arrow"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
-                data-wow-duration="1500ms">
-                <div class="img-box">
-                  <img alt="blog" src="https://mobicam.vn/assets/images/sanpham.jpg" />
-                </div>
-                <div class="content-box">
-                  <div class="meta-box">
-                    <div class="meta-info d-flex">
-                      <div class="icon">
-                        <i class="flaticon-calendar"></i>
+                    <div class="content-box">
+                      <div class="meta-box">
+                        <div class="meta-info d-flex">
+                          <div class="icon">
+                            <i class="flaticon-calendar"></i>
+                          </div>
+                          <span><a href="index.html">09/07/2024</a></span>
+                        </div>
                       </div>
-                      <span><a href="index.html">09/07/2024</a></span>
+                      <div class="title-box">
+                        <h3>
+                          <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
+                        </h3>
+                      </div>
+                      <div class="btn-box">
+                        <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
+                            class="flaticon-right-arrow"></i></a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="title-box">
-                    <h3>
-                      <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
-                    </h3>
-                  </div>
-                  <div class="btn-box">
-                    <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
-                        class="flaticon-right-arrow"></i></a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                  </li>
+                  <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
+                    data-wow-duration="1500ms">
+                    <div class="img-box">
+                      <img alt="blog" loading="lazy" width="236" height="174" decoding="async" data-nimg="1"
+                        class="h-100" src="https://mobicam.vn/assets/images/sanpham.jpg" />
+                    </div>
+                    <div class="content-box">
+                      <div class="meta-box">
+                        <div class="meta-info d-flex">
+                          <div class="icon">
+                            <i class="flaticon-calendar"></i>
+                          </div>
+                          <span><a href="index.html">09/07/2024</a></span>
+                        </div>
+                      </div>
+                      <div class="title-box">
+                        <h3>
+                          <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
+                        </h3>
+                      </div>
+                      <div class="btn-box">
+                        <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
+                            class="flaticon-right-arrow"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
+                    data-wow-duration="1500ms">
+                    <div class="img-box">
+                      <img alt="blog" src="https://mobicam.vn/assets/images/sanpham.jpg" />
+                    </div>
+                    <div class="content-box">
+                      <div class="meta-box">
+                        <div class="meta-info d-flex">
+                          <div class="icon">
+                            <i class="flaticon-calendar"></i>
+                          </div>
+                          <span><a href="index.html">09/07/2024</a></span>
+                        </div>
+                      </div>
+                      <div class="title-box">
+                        <h3>
+                          <a href="blog-details.html">Lý do nên sử dụng thiết bị giám sát hành trình.</a>
+                        </h3>
+                      </div>
+                      <div class="btn-box">
+                        <a class="read-more" href="blog-details.html"><span class="txt">Đọc thêm</span><i
+                            class="flaticon-right-arrow"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+  </div>
   <%- include('./particals/footer.ejs') %>
-    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="/plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/_next/static/js/header.js"></script>
+    <script src="/_next/static/js/home.js"></script>
+    <script src="/_next/static/js/global.js"></script>
     <script>
       document.getElementById('play-btn').addEventListener('click', function (event) {
         event.preventDefault();
@@ -880,7 +733,7 @@
           if (!entry.isIntersecting) {
             // Khi video không còn hiển thị trong viewport
             video.pause();
-            thumbNail.style.display = 'flex'; 
+            thumbNail.style.display = 'flex';
           }
         });
       }, {

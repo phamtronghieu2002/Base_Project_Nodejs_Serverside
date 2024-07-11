@@ -1,0 +1,6 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+.scroll-snap-center{
+    scroll-snap-align: start;
+}
