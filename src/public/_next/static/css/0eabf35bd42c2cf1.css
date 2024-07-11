@@ -79,6 +79,7 @@
   -o-animation-duration: 24s;
   -o-animation-iteration-count: infinite;
   -o-animation-timing-function: linear;
+ 
 }
 @keyframes rotateme {
   0% {

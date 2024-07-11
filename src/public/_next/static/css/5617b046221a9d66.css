@@ -1209,7 +1209,8 @@ button.swiper-pagination-bullet {
   transition: all 0.25s ease-in-out;
 }
 .sticky-menu .navbar-wrap ul li a {
-  padding: 35px 0;
+  padding: 0;
+  margin: 26px 0;
 }
 .main-header {
   width: 100%;
@@ -1689,7 +1690,7 @@ button.swiper-pagination-bullet {
   --thm-bg-ling-green: #e3f9f5;
   --thm-white: #fff;
   --thm-black: #101010;
-  --thm-green: #164343;
+  --thm-green: #06996e;
   --thm-teal: #16a571;
 }
 body {
@@ -1804,7 +1805,7 @@ h6 {
   background-color: var(--thm-bg-ling-green);
 }
 .hero-ptb {
-  padding: 270px 0 130px;
+  padding: 220px 0 130px;
 }
 .sec-ptb {
   padding: 50px 0px 140px;
@@ -1851,13 +1852,17 @@ h6 {
   border: 2px solid rgba(22, 67, 67, 0.12);
   border-radius: 10px !important;
 }
+.sec-content h5{
+  margin-bottom: 10px;
+  color: var(--thm-green);
+}
 .sec-content p,
 .sec-content ul.sec-list-item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .sec-content ul.sec-list-item li {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-weight: 500;
   color: var(--thm-black);
 }
@@ -1886,8 +1891,8 @@ h6 {
 }
 .sec-title {
   padding-bottom: 18px;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .thm-btn {
   position: relative;
@@ -2315,8 +2320,8 @@ label {
   width: 50px;
   border-radius: 50%;
   background: #8ec1ae;
-  top: -10%;
-  right: 20%;
+  top: -6%;
+  right: -79%;
   animation: zoomInOut 2s infinite;
 }
 .hero-content-style1:after {
@@ -2648,14 +2653,24 @@ label {
 .service-page-sec .single-service-style2 {
   margin-bottom: 24px;
 }
-.video-sec {
-  background: url(../media/newsletter01.bc74b3fc.png) 50% / cover;
+.video-sec{
+  position: relative;
+}
+.video-sec .video-background{
+  width: 100%;
+  /* background: url(../media/newsletter01.bc74b3fc.png) 50% / cover; */
 }
 .video-sec .video-sec-overlay {
-  padding: 175px 0;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.video-sec .video-sec-overlay a {
-  position: relative;
+.thumb-nail-video{
+    background: url(/_assets/images/product/thumb-nail.png) 50% / cover;
+    position: absolute;
+    display: flex;
+    inset: 0;
 }
 .video-sec .video-sec-overlay a i {
   padding-top: 4px;
@@ -3704,7 +3719,8 @@ label {
   border: none;
 }
 .footer-sec {
-  background: url(../media/footer.d3ce18c6.png) 50% / cover;
+  /* background: url(../media/footer.d3ce18c6.png) 50% / cover; */
+  background-image: url(../../../_assets/images/footer/footer-bg.png);
 }
 .footer-sec .footer-hr {
   margin-bottom: 0;
@@ -3755,7 +3771,7 @@ label {
   transition: all 0.2s linear;
 }
 .footer-widget .footer-widget-content .footer-links ul li a:hover {
-  color: #0fc482;
+  color: #164343;
 }
 .footer-widget .footer-widget-content .footer-links ul li:last-child {
   margin-bottom: 0;
@@ -4100,7 +4116,7 @@ form.itco-sform .contact-field input,
 form.itco-sform .contact-field textarea {
   padding: 10px 20px;
 }
-.contact-page-sec .sec-content {
+/* .contact-page-sec .sec-content {
   justify-content: start;
 }
 .contact-page-sec .sec-content form {
@@ -4154,7 +4170,49 @@ form.itco-sform .contact-field textarea {
 .contact-page-sec .company-social a:hover {
   background: var(--thm-teal);
   color: var(--thm-white);
+} */
+
+iframe {
+  border: 0;
+  border-radius: 10px;
 }
-.contact-map-sec {
-  overflow: hidden;
+.col-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/_assets/images/product/group32.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:700px 450px;
+  position: relative;
+}
+.product-image{
+  width: 60%;
+
+}
+.app-info-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.app-info-store-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.app-info-store-link img{
+  height: 35px;
+}
+.app-info-qr-code img{
+  height: 80px;
+  width: 80px;
+}
+.sec-title-mobile{
+  display: none;
 }
