@@ -291,7 +291,7 @@ i[class^='flaticon-']:before {
     scroll-snap-type: y mandatory;
 }
 :root {
-    --swiper-navigation-size: 44px;
+    --swiper-navigation-size: 25px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -1513,8 +1513,12 @@ button.swiper-pagination-bullet {
     position: relative;
     display: block;
 }
+
 .main-header-one__bottom-left .site-ligo {
     margin-right: 130px;
+}
+.main-header-one__bottom-left .site-ligo img{
+    scale: 1.2;
 }
 .main-header-one__bottom-right {
     position: relative;
@@ -1807,7 +1811,7 @@ h6 {
     padding: 220px 0 130px;
 }
 .sec-ptb {
-    padding: 50px 0px 140px;
+    padding: 50px 0px 100px;
 }
 .sec-pt {
     padding-top: 100px;
@@ -4165,27 +4169,91 @@ form.itco-sform .contact-field textarea {
     overflow: hidden;
 }
 
-/* custom */
+/* custom certificert */
 
-.frame-certificert {
-    display: block;
-    width: 350px;
-    height: 475px;
-    border-radius: 10px;
+.certificate-slider {
+    width: 95%;
+    margin: 50px auto;
+    perspective: 1000px; /* Tạo chiều sâu 3D */
+    position: relative; /* Cho phép đặt nút mũi tên */
+  }
+
+  .swiper-slide {
+    width: 300px !important;
+    height: 418px !important;
+    background-color: #fff;
     position: relative;
-    padding: 20px;
-    border-radius: 15px;
-    background: white; /* Màu nền của thẻ */
-    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài phần padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform-style: preserve-3d; /* Giữ hiệu ứng 3D cho slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    opacity: 0.7; /* Độ mờ cho slide phụ */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+  }
 
-    border-style: solid;
-  border-width: 10px;
-  border-image-slice: 60 30;
+  .swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  /* Nút mũi tên */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .certificate-slider .swiper-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #effff9;
+    background: var(--thm-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+  }
+  .certificate-slider .swiper-button:hover{
+    background: var(--thm-secondary)
+  }
+  .swiper-button-next {
+    right: 50px;
+  }
+
+  .swiper-button-prev {
+    left: 50px;
+  }
+
+  /* Hiệu ứng cho slide hiện tại */
+  .swiper-slide-active {
+    opacity: 1; /* Độ mờ 100% cho slide hiện tại */
+    transform: scale(1.1); /* Tăng kích thước cho slide hiện tại */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Bóng cho slide hiện tại */
+  }
+  .compensate-for-scrollbar{
+    margin: 0 !important;
+  }
+  body.compensate-for-scrollbar {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .frame-certificert{
+        border: 10px solid var(--thm-primary);
+        height: 100%;
+  }
+
+.scroll-top i{
+    margin-right: -1px;
 }
-
-
-
-.owl-dots{
-  margin-top: 15px;
-}
-

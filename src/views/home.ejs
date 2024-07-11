@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
-  <link rel="stylesheet" href="/_next/static/css/style.css" />
+
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -17,8 +17,9 @@
   <link rel="stylesheet" href="/plugins/owlCarousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="/plugins/owlCarousel/owl.theme.default.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-<!-- swiper -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/_next/static/css/style.css" />
   <title>Home 2 || Itco Nextjs 14 Template</title>
   <meta name="description"
     content="Itco Nextjs 14 Template for agencies, businesses, consulting firms, creative ventures, cybersecurity providers, data management specialists, digital agencies, IT services, IT solutions providers, SaaS companies, software developers, startups, and technology service providers." />
@@ -37,7 +38,7 @@
       <div id="loader"></div>
     </div>
     <%- include('./particals/header.ejs') %>
-      <section class="hero-sec2 bg-light-greem hero-ptb">
+      <section class="hero-sec2 bg-light-greem hero-ptb scroll-snap-center">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -73,7 +74,7 @@
         </div>
       </section>
 
-      <section class="service-sec2 sec-ptb">
+      <section class="service-sec2 sec-ptb scroll-snap-center">
         <div class="container">
           <div class="row">
             <div class="offset-lg-3 col-lg-6">
@@ -173,7 +174,7 @@
           </div>
         </div>
       </section>
-      <section class="about-sec about-sec2 sec-ptb bg-light-greem">
+      <section class="about-sec about-sec2 sec-ptb bg-light-greem scroll-snap-center">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -228,7 +229,7 @@
           </div>
         </div>
       </section>
-      <section class="newslatter-sec newslatter-sec2 bg-green">
+      <section class="newslatter-sec newslatter-sec2 bg-green scroll-snap-center">
         <div class="container">
           <div class="row aximo_screenfix_right">
             <div class="col-lg-5 d-flex align-items-center">
@@ -337,56 +338,66 @@
           </div>
         </div>
       </section>
-      <section class="team-sec sec-ptb bg-light-greem">
+      <section class="team-sec sec-ptb bg-light-greem scroll-snap-center">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <div class="sec-content">
-                <h2 class="sec-title">Chứng nhận</h2>
+                <h2 class="sec-title text-center">Chứng nhận</h2>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <div class="team-slider position-relative pt-5">
-
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn1.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn1.png" alt="Image 1">
-                      </a>
+              <div class="team-slider position-relative pt-2">
+                <div class="certificate-slider">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn1.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn1.png" alt="Image 1">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn2.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn2.png" alt="Image 2">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 3">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn6.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 4">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn6.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 5">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 6">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="frame-certificert d-block" data-fancybox="gallery"
+                          href="http://taixecongnghe.com/static/images/interface/cn3.png">
+                          <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 7">
+                        </a>
+                      </div>
                     </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn2.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn2.png" alt="Image 2">
-                      </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn3.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 3">
-                      </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn6.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 4">
-                      </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn6.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn6.png" alt="Image 5">
-                      </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn3.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 6">
-                      </a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="frame-certificert" data-fancybox="gallery" href="http://taixecongnghe.com/static/images/interface/cn3.png">
-                        <img src="http://taixecongnghe.com/static/images/interface/cn3.png" alt="Image 7">
-                      </a>
-                    </div>
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev  swiper-button"></div>
                   </div>
                 </div>
               </div>
@@ -665,28 +676,12 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="/plugins/owlCarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/_next/static/js/header.js"></script>
   <script src="/_next/static/js/home.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/_next/static/js/global.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      loop: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 150,
-        modifier: 2.5,
-        slideShadows: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      }
-    });
+
   </script>
 </body>
 

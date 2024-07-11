@@ -242,6 +242,7 @@
   }
   .menu-area .mobile-nav-toggler i {
     color: black;
+    font-size: 1.7rem;
   }
   .menu-area__inner {
     position: relative;
@@ -313,6 +314,14 @@
   }
 }
 @media (max-width: 767px) {
+  .swiper-slide{
+    width: 330px !important;
+    height: 450px !important;
+
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
   .sec-ptb {
     padding: 80px 0;
   }

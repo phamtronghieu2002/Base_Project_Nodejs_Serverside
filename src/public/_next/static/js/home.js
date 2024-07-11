@@ -1,46 +1,46 @@
 // carousel certificert
 try {
-    var owl = $('.owl-carousel')
-    
-    owl.owlCarousel({
-      margin: 0,
-      responsiveClass: true,
-      dots: true,
-      slideTransition: "linear",
-      autoplay: false,
+  var swiper = new Swiper('.mySwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 80,
+    slidesPerGroup: 1,
+    zoom: true,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 45,
+      stretch: 0,
+      depth: 120,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+} catch (error) {
+    console.log(error);
+}
 
-      navText: [
-        "<i class='flaticon-left-arrow'></i>",
-        "<i class='flaticon-right-arrow'></i>",
-      ],
-     
-      responsive: {
-        0: {
-          items: 1,
-          nav: true,
-        },
-        767: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
-
-
-    owl.trigger('translated.owl.carousel');
-  } catch (error) {
-      console.log(error);
-  }
-  
 //preloader
-const preloader =$("#preloader")
-document.addEventListener("DOMContentLoaded", function() {
-  
-    setTimeout(function() {
+const preloader = $('#preloader');
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
         preloader.hide();
     }, 700);
 });
+//
+$('[data-fancybox="gallery"]').fancybox({});
+
 // 
-$('[data-fancybox="gallery"]').fancybox({
-   
-});
