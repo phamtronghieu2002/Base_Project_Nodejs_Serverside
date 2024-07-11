@@ -1517,7 +1517,7 @@ button.swiper-pagination-bullet {
 .main-header-one__bottom-left .site-ligo {
     margin-right: 130px;
 }
-.main-header-one__bottom-left .site-ligo img{
+ .site-ligo img{
     scale: 1.2;
 }
 .main-header-one__bottom-right {
