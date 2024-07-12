@@ -285,6 +285,13 @@
   }
   .footer-widget .footer-widget-content .footer-links ul li a{
     color:  #dee2e6 ;
+    font-size: 15px;
+  }
+  .fa-solid, .fas{
+    margin-right: 5px;
+  }
+  .footer-widget .footer-widget-content .footer-links ul li{
+    margin-bottom: 0px;
   }
 }
 
@@ -422,10 +429,10 @@
 
   }
   .swiper-slide img {
-    width: 100%;
+    width: 100%;  
   }
   .sec-ptb {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 
   .sec-pt {
@@ -466,6 +473,9 @@
 }
 .col-right {
   background-size:500px 350px;
+}
+.bog-left{
+  display: none;
 }
   
 }
@@ -1065,7 +1075,7 @@
 
   .footer-widget h4.footer-widget-title {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 38px;
   }
 
