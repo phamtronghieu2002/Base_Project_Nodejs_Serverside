@@ -1765,8 +1765,8 @@ button.swiper-pagination-bullet {
 .main-header-one__bottom-left .site-ligo {
   margin-right: 130px;
 }
- .site-ligo img {
-  scale: 1.2;
+ .site-ligo img{
+    scale: 1.2;
 }
 
 .main-header-one__bottom-right {
@@ -2191,7 +2191,7 @@ h6 {
 
 .sec-title {
   padding-bottom: 18px;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 40px;
 }
 
@@ -2930,8 +2930,8 @@ label {
 }
 
 .service-lists-style1 .single-service-icon {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2942,7 +2942,7 @@ label {
 }
 
 .service-lists-style1 .single-service-icon i {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--thm-teal);
   transition: all 0.3s linear;
   margin-bottom: -3px;
@@ -3144,6 +3144,7 @@ label {
   color: var(--thm-white);
   font-size: 42px;
   line-height: 54px;
+  letter-spacing: 1px;
 }
 
 .newslatter-sec .sec-content p {
@@ -4898,7 +4899,7 @@ iframe {
 }
 
 .product-image {
-  width: 60%;
+  /* width: 60%; */
 
 }
 
@@ -4919,12 +4920,12 @@ iframe {
 }
 
 .app-info-store-link img {
-  height: 35px;
+  height: 50px;
 }
 
 .app-info-qr-code img {
-  height: 80px;
-  width: 80px;
+
+  width: 110px;
 }
 
 .sec-title-mobile {

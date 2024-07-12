@@ -65,3 +65,13 @@ let observer = new IntersectionObserver((entries, observer) => {
 });
 
 observer.observe(video);
+// add animation certificert 
+//phần tử chẵn
+const slide_item_even = $('.swiper-wrapper .swiper-slide:nth-child(2n) a');
+const slide_item_odd = $('.swiper-wrapper .swiper-slide:nth-child(2n+1) a');
+
+slide_item_even.attr('data-aos', 'fade-right');
+slide_item_odd.attr('data-aos', 'fade-left');
+slide_item_even.attr('data-aos-duration', '1000');
+slide_item_odd.attr('data-aos-duration', '1000');
+
