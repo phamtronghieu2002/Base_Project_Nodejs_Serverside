@@ -2053,7 +2053,7 @@ h6 a {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -2089,7 +2089,7 @@ h6 {
 }
 
 .sec-ptb {
-  padding: 50px 0px 100px;
+  padding: 100px 0px 100px;
 }
 
 .sec-pt {
@@ -2832,7 +2832,7 @@ label {
 
 .about-sec .sec-images .sec-img-one {
   width: 80%;
-  border-radius: 318px;
+  border-radius: 150px;
 }
 
 .about-sec .sec-images .sec-img-one img {
@@ -4987,8 +4987,8 @@ iframe {
 }
 
 .certificate-slider .swiper-button {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border-radius: 10px;
   font-size: 20px;
   color: #effff9;
@@ -5004,11 +5004,11 @@ iframe {
 }
 
 .swiper-button-next {
-  right: 50px;
+  right: 0px;
 }
 
 .swiper-button-prev {
-  left: 50px;
+  left: 0px;
 }
 
 /* Hiệu ứng cho slide hiện tại */
