@@ -523,7 +523,7 @@
   }
 
   .service-lists-style1 .single-service {
-    padding: 44px 0;
+    padding: 0;
   }
 
   .service-sec2 {
@@ -748,31 +748,34 @@
   }
 
   .service-lists-style1 .single-service-icon {
-    width: 76px;
-    height: 76px;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    margin:10px;
   }
 
   .service-lists-style1 .single-service-icon i {
-    font-size: 42px;
+    font-size: 26px;
+    position: absolute;
+    top: 22px;  
   }
 
   .service-lists-style1 .single-service:first-child .single-service-content a {
-    top: 5%;
+    top: 33%;
   }
 
   .service-lists-style1 .single-service-content a {
-    font-size: 28px;
-    top: 26%;
+    font-size: 18px;
+    top: 33%;
   }
 
   .service-lists-style1 .single-service-content h4 {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 23px;
+    padding: 8px 0px;
+
   }
 
   .service-lists-style1 .single-service {
-    padding: 34px 0;
+    padding: 0px 0;
   }
 
   .service-cat-sec {

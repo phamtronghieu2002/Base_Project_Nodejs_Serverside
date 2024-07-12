@@ -43,4 +43,25 @@ document.addEventListener('DOMContentLoaded', function () {
 //
 $('[data-fancybox="gallery"]').fancybox({});
 
-// 
+// VIDEO
+document.getElementById('play-btn').addEventListener('click', function (event) {
+  event.preventDefault();
+  document.getElementById('thumb-nail-video').style.display = 'none';
+  document.getElementById('video').play();
+});
+//VIDEO
+let video = document.getElementById('video');
+let thumbNail = document.getElementById('thumb-nail-video');
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      // Khi video không còn hiển thị trong viewport
+      video.pause();
+      thumbNail.style.display = 'flex';
+    }
+  });
+}, {
+  threshold: 0
+});
+
+observer.observe(video);
