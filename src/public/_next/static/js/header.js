@@ -3,6 +3,7 @@ const sticky_header = $("#sticky-header");
 const menu_mobile = $(".offcanvas-start");
 
 const ToggleMenuMobile = (isOpen) => {
+
     isOpen ?  menu_mobile.addClass("show") : menu_mobile.removeClass("show");
 }
 

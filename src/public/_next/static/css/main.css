@@ -1836,13 +1836,18 @@ button.swiper-pagination-bullet {
     color: var(--thm-black);
 }
 
-.main-header-two .header-contact-info ul li:before {
-    background: var(--thm-green);
-}
+.page .main-header-two .header-contact-info ul li .icon-box i,
+.page .main-header-two .header-contact-info ul li p,
+.page .main-header-two .header-contact-info ul li p a,
+.page .main-header-two .header-social-links ul li a {
+    color: var(--thm-white) !important;
+} 
+ 
+
 
 .main-header-two .header-contact-info ul li p a:hover,
 .main-header-two .header-social-links ul li a:hover {
-    color: var(--thm-teal);
+    color: var(--thm-primary) !important;
 }
 
 .main-header-two .sticky-menu .main-header-one__bottom {
@@ -2539,7 +2544,7 @@ label {
 }
 
 #site-breadcumb .site-breadcumb-wrapper {
-    background: rgba(22, 67, 67, 0.9);
+    background: var(--thm-secondary);
     padding: 280px 0 140px;
 }
 
@@ -4034,6 +4039,7 @@ label {
     width: 100%;
     transition: all 0.3s linear;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .blog-item .img-box .blog-date {
@@ -4885,62 +4891,6 @@ form.itco-sform .contact-field textarea {
     padding: 10px 20px;
 }
 
-/* .contact-page-sec .sec-content {
-  justify-content: start;
-}
-.contact-page-sec .sec-content form {
-    margin-top: 10px;
-}
-.contact-page-sec .get-in-touch .qinfo-item {
-    display: flex;
-    margin-bottom: 24px;
-}
-.contact-page-sec .get-in-touch .qinfo-item .qinfo-icon i {
-    background: var(--thm-bg-ling-green);
-    color: var(--thm-teal);
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    font-size: 20px;
-}
-.contact-page-sec .get-in-touch .qinfo-item .qinfo-box {
-    margin-left: 18px;
-}
-.contact-page-sec .get-in-touch .qinfo-item .qinfo-box h5 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 4px;
-}
-.contact-page-sec .get-in-touch .qinfo-item .qinfo-box a {
-    color: var(--thm-black);
-}
-.contact-page-sec .get-in-touch .qinfo-item .qinfo-box a:hover {
-    color: var(--thm-teal);
-}
-.contact-page-sec .company-social {
-    margin-top: 40px;
-    gap: 18px;
-}
-.contact-page-sec .company-social a {
-    font-size: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 6px;
-    background: var(--thm-bg-ling-green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--thm-black);
-}
-.contact-page-sec .company-social a:hover {
-  background: var(--thm-teal);
-  color: var(--thm-white);
-} */
-
 iframe {
     border: 0;
     border-radius: 10px;
@@ -5132,16 +5082,72 @@ body.compensate-for-scrollbar {
 .single-service2.active h4 {
     color: white;
 }
-.agents .agent-image img{
-  object-fit: scale-down;
-  filter: brightness(100);
+.agents .agent-image img {
+    object-fit: scale-down;
+    filter: brightness(100);
 }
 
 .agents .owl-nav {
     display: none !important;
 }
-.owl-stage{
-  display: flex;
-  align-items: center;
-  height: 80px;
+.owl-stage {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+/* contact page */
+.contact-page-sec .sec-content {
+    justify-content: start;
+}
+.contact-page-sec .sec-content form {
+    margin-top: 10px;
+}
+.contact-page-sec .qinfo-item {
+    display: flex;
+    margin-bottom: 24px;
+}
+.contact-page-sec .qinfo-item .qinfo-icon i {
+    background: var(--thm-bg-ling-green);
+    color: var(--thm-teal);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.contact-page-sec .qinfo-item .qinfo-box {
+    margin-left: 18px;
+}
+.contact-page-sec .qinfo-item .qinfo-box h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+.contact-page-sec .qinfo-item .qinfo-box a {
+    color: var(--thm-black);
+}
+.contact-page-sec .qinfo-item .qinfo-box a:hover {
+    color: var(--thm-teal);
+}
+.contact-page-sec .company-social {
+    margin-top: 40px;
+    gap: 18px;
+}
+.contact-page-sec .company-social a {
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+    background: var(--thm-bg-ling-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--thm-black);
+}
+.contact-page-sec .company-social a:hover {
+    background: var(--thm-teal);
+    color: var(--thm-white);
 }

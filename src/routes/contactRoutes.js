@@ -1,7 +1,7 @@
 const express = require("express");
 const Router = express.Router();
 
-Router.get("/contact", (req, res) => {
+Router.get("/", (req, res) => {
     res.render("contact")
 });
 
