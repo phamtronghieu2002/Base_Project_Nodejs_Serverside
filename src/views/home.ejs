@@ -19,10 +19,15 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+  <!-- fancy box to preview image -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- carousel -->
+  <link rel="stylesheet" href="/plugins/owlCarousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/plugins/owlCarousel/owl.theme.default.min.css" />
+  <!-- style css -->
   <link rel="stylesheet" href="/_next/static/css/style.css" />
   <title>TDC: Giám sát hành trình 5G-GPS</title>
   <meta name="description"
@@ -85,20 +90,20 @@
             <h4 class="sec-title sec-title-mobile">
               THIẾT BỊ GIÁM SÁT VỚI ESIM tự hào tiên phong XÓA BỎ sim cứng
             </h4>
-            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-left" data-aos-duration="2700">
-              <div class="sec-images sec-img-style col-right ">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-left" data-aos-duration="1500">
+              <div class="sec-images sec-img-style col-right">
                 <div class="product-image">
                   <!-- <iframe src="https://hieupham.sirv.com/productspin/ok.spin" allow="autoplay"; width="400px" height="400px" frameborder="0" allowfullscreen></iframe> -->
                   <img src="https://hieupham.sirv.com/productspin/ok.spin?image=34&gif.lossy=5&w=500&h=500" width="500"
-                    height="500" alt="">
+                    height="500" alt="product_thumb">
                   <!-- <img src="https://hieupham.sirv.com/Spins/spin/ok.spin?image=5&gif.lossy=5&w=167&h=500" width="167" height="500" alt=""> -->
                   <!-- <img src="https://hieupham.sirv.com/Spins/Trainers/Trainers.spin?image=36&gif.lossy=5&w=500&h=500" width="500" height="500" alt=""> -->
                 </div>
 
-        
+
               </div>
             </div>
-            <div class="col-lg-6 tab-col-gap wow fadeInUp" data-aos="fade-right" data-aos-duration="2000">
+            <div class="col-lg-6 tab-col-gap wow fadeInUp" data-aos="fade-right" data-aos-duration="1500">
               <div class="sec-content">
                 <h4 style="font-size: 30px;" class="sec-title sec-title-none">
                   THIẾT BỊ GIÁM SÁT VỚI ESIM - tự hào tiên phong XÓA BỎ sim cứng
@@ -183,70 +188,64 @@
       </section>
       <section class="introduce-category about-sec sec-ptb" style="min-height: 690px;">
         <div class="container">
+          <i class="fa-solid fa-face-awesome"></i>
           <div class="row">
-            <div class="col-lg-6">
-              <div class="sec-images">
-                <div class="sec-img-one overflow-hidden wow fadeInLeft" data-wow-delay="500ms"
-                  data-wow-duration="1500ms"
-                  style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms;"><img alt="about-img"
-                    loading="lazy" width="509" height="550" decoding="async" data-nimg="1" style="color:transparent"
-                    src="/_assets/images/product/group400.png"></div>
-                <div class="sec-img-two overflow-hidden wow fadeInRight" data-wow-delay="500ms"
-                  data-wow-duration="1500ms"
-                  style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms;"><img alt="about-img"
-                    loading="lazy" width="234" height="290" decoding="async" data-nimg="1" style="color:transparent"
-                    src="/_assets/images/product/sanpham.jpg"></div>
+            <div class="col-lg-6" data-aos="fade-up"  data-aos-duration="1500">
+              <div class="sec-images h-100">
+                <img src="/_assets/images/product/truck.png" alt="thumb_cat" style="height: 70%;">
+
               </div>
             </div>
-            <div class="col-lg-6 tab-col-gap">
+            <div class="col-lg-6 tab-col-gap" data-aos="fade-up"  data-aos-duration="1500">
               <div class="service-lists service-lists-style1">
-                <div class="single-service single-service1 d-flex align-items-center wow fadeInUp" data-wow-delay="0ms"
-                  data-wow-duration="1500ms"
-                  style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms;">
-                  <div class="single-service-icon"> <i class="fi fi-rr-webcam"></i>
+                <div class="wrapper_service mb-3">
+                  <div class="single-service single-service1 d-flex align-items-center wow fadeInUp"
+                    data-wow-delay="0ms" data-wow-duration="1500ms"
+                    style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms;">
+                    <div class="single-service-icon"> <i class="fi fi-rr-webcam"></i>
+                    </div>
+                    <div class="single-service-content">
+                      <h4>Camera nghị định 10</h4>
+                      <a> <i class="fi fi-br-angle-up"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="single-service-content">
-                    <h4>Camera nghị định 10</h4>
-                    <a> <i class="fi fi-br-angle-up"></i>
-                    </a>
+                  <div class="accordion-body ">
+                    <p>
+                      <i class="fas fa-check"> </i>
+                      Bộ Camera duy nhất được cấp TCVN13396, QCVN31, độ phân giải cao
+                      Full HD
+                    </p>
+                    <p>
+
+                      <i class="fas fa-check"> </i>
+                      Dung lượng lưu trữ 1TB
+                    </p>
+                    <p>
+
+                      <i class="fas fa-check"> </i>
+                      Đặc biệt tích hợp màn hình cam lùi
+                    </p>
+                    <p>
+
+                      <i class="fas fa-check"> </i>
+                      Hợp quy và đáp ứng tiêu chuẩn ND 10/2020 của Chính Phủ
+                    </p>
                   </div>
                 </div>
-                <div class="accordion-body ">
-                  <p>
-                    <i class="fas fa-check"> </i>
-                    Bộ Camera duy nhất được cấp TCVN13396, QCVN31, độ phân giải cao
-                    Full HD
-                  </p>
-                  <p>
-
-                    <i class="fas fa-check"> </i>
-                    Dung lượng lưu trữ 1TB
-                  </p>
-                  <p>
-
-                    <i class="fas fa-check"> </i>
-                    Đặc biệt tích hợp màn hình cam lùi
-                  </p>
-                  <p>
-
-                    <i class="fas fa-check"> </i>
-                    Hợp quy và đáp ứng tiêu chuẩn ND 10/2020 của Chính Phủ
-                  </p>
-                </div>
-                <div class="single-service single-service2 d-flex align-items-center wow fadeInUp" data-wow-delay="0ms"
-                  data-wow-duration="1500ms"
-                  style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms;">
-                  <div class="single-service-icon"> <i class="fi fi-rs-aperture"></i>
+                <div class="wrapper_service">
+                  <div class="single-service single-service2 d-flex align-items-center wow fadeInUp"
+                    data-wow-delay="0ms" data-wow-duration="1500ms"
+                    style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms;">
+                    <div class="single-service-icon"> <i class="fi fi-rs-aperture"></i>
+                    </div>
+                    <div class="single-service-content">
+                      <h4>Camera hành trình </h4>
+                      <a>
+                        <i class="fi fi-br-angle-up"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="single-service-content">
-                    <h4>Camera hành trình </h4>
-                    <a>
-                      <i class="fi fi-br-angle-up"></i>
-                    </a>
-                  </div>
-                </div>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample" style="">
                   <div class="accordion-body ">
                     <p>
                       <i class="fas fa-check"> </i>
@@ -262,11 +261,65 @@
                       gặp rủi ro
                     </p>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="agents bg-green">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- carousel -->
+              <div class="owl-carousel owl-theme pt-5 pb-5">
+                <div class="item">
+                  <div class="single-agent">
+                    <div class="agent-image">
+                      <img src="/_assets/images/agentLogo/logo1.png" alt="agent" />
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="single-agent">
+                    <div class="agent-image">
+                      <img src="/_assets/images/agentLogo/logo2.png" alt="agent" />
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="single-agent">
+                    <div class="agent-image">
+                      <img src="/_assets/images/agentLogo/logo3.png" alt="agent" />
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="single-agent">
+                    <div class="agent-image">
+                      <img src="/_assets/images/agentLogo/logo4.png" alt="agent" />
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="single-agent">
+                    <div class="agent-image">
+                      <img src="/_assets/images/agentLogo/logo5.png" alt="agent" />
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
       </section>
       <section class="certificert team-sec sec-ptb bg-light-greem">
         <div class="container">
@@ -347,7 +400,7 @@
                 <div class="single-info flex-lg-fill d-flex align-items-center justify-content-center">
                   <div class="info-icon"><i class="flaticon-completed-task"></i></div>
                   <div class="info">
-                    <h2  class="fs-1"><span class="countfect fs-1">5000</span>+</h2><span>Người Dùng</span>
+                    <h2 class="fs-1"><span class="countfect fs-1">5000</span>+</h2><span>Người Dùng</span>
                   </div>
                 </div>
                 <div class="single-info flex-lg-fill d-flex align-items-center justify-content-center">
@@ -397,7 +450,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000" >
+            <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000">
               <div class="blog-sidebar-box">
                 <ul>
                   <li class="blog-sidebar-box-item blog-item d-sm-flex wow fadeInUp" data-wow-delay="500ms"
@@ -479,7 +532,7 @@
                   </li>
                 </ul>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </section>
@@ -493,7 +546,34 @@
     <script src="/_next/static/js/global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="/plugins/owlCarousel/owl.carousel.min.js"></script>
     <script src="/_next/static/js/home.js"></script>
+    <script>
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
 </body>
 
 </html>

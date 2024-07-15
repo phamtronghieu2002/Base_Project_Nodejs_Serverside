@@ -1,3 +1,4 @@
+//handle scroll to top
 const btn_scroll_to_top =$('.scroll-top');
 
 btn_scroll_to_top.click(function () {
@@ -15,4 +16,12 @@ window.addEventListener("scroll", function () {
     }
   });
   
+
+//preloader
+const preloader = $('#preloader');
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        preloader.hide();
+    }, 700);
+});
   
