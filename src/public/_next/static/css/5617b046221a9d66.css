@@ -2491,7 +2491,7 @@ label {
 }
 
 #site-breadcumb .site-breadcumb-wrapper {
-  background: rgba(22, 67, 67, 0.9);
+  background: var(--thm-green);
   padding: 280px 0 140px;
 }
 
@@ -2832,7 +2832,7 @@ label {
 
 .about-sec .sec-images .sec-img-one {
   width: 80%;
-  border-radius: 150px;
+  border-radius: 80px;
 }
 
 .about-sec .sec-images .sec-img-one img {
@@ -3426,7 +3426,7 @@ label {
 
 .company-qinfo-raaper {
   padding: 50px 0;
-  margin-top: -110px;
+  margin-top: -60px;
   border-radius: 10px;
 }
 
@@ -3441,7 +3441,7 @@ label {
 
 .company-qinfo-raaper .single-info i {
   font-size: 60px;
-  color: var(--thm-teal);
+  color: var(--thm-bg-white);
   margin-right: 25px;
 }
 
@@ -4795,7 +4795,7 @@ label {
 }
 
 form.itco-cform .contact-field {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 form.itco-cform .contact-field input,
@@ -4805,7 +4805,7 @@ form.itco-cform .contact-field textarea {
   line-height: 30px;
   color: var(--thm-black);
   width: 100%;
-  padding: 12px 22px;
+  padding: 5px 15px;
   border-radius: 10px;
   border: 1px solid rgba(56, 56, 56, 0.12);
 }
@@ -5073,4 +5073,12 @@ body.compensate-for-scrollbar {
 .single-service2.active i ,
 .single-service2.active h4 { 
   color: white;
+}
+.hd2 .main-header-one__top-inner i,
+.hd2 .main-header-one__top-inner a {
+  color: var(--thm-white) !important;
+}
+.hd2 .main-header-one__top-inner i:hover,
+.hd2 .main-header-one__top-inner a:hover {  
+  color: var(--thm-primary) !important;
 }

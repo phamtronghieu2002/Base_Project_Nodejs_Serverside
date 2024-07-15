@@ -1,4 +1,4 @@
-const btn_scroll_to_top =$('.scroll-top');
+const btn_scroll_to_top = $('.scroll-top');
 
 btn_scroll_to_top.click(function () {
     window.scrollTo({
@@ -13,6 +13,13 @@ window.addEventListener("scroll", function () {
     } else {
         btn_scroll_to_top.removeClass("open");
     }
-  });
-  
-  
+});
+//preloader
+const preloader = $('#preloader');
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        preloader.hide();
+    }, 700);
+});
+
+
