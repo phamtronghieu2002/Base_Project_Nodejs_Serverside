@@ -405,10 +405,6 @@
     margin-top: 60px;
   }
 
-  .faq-sec .sec-images .sec-img-one {
-    border-radius: 160px 0;
-  }
-
   .footer-sec .footer-widget.pages-links {
     margin-left: 0;
   }
@@ -552,21 +548,11 @@
     margin-bottom: 30px;
   }
 
-  .project-slider .owl-nav {
-    position: relative;
-    margin-top: 50px;
-    right: 0;
-    top: inherit;
-    justify-content: center;
-  }
-
   .project-sec2 {
     padding-bottom: 76px;
   }
 
-  .business-sec .sec-images {
-    margin-left: 0;
-  }
+
 
   .company-qinfo-raaper {
     margin-top: 0;
@@ -613,24 +599,8 @@
     padding-bottom: 76px;
   }
 
-  .faq-sec .sec-images {
-    margin-left: 0;
-  }
-
   .video-sec2 .video-sec-overlay {
     padding: 175px 0;
-  }
-
-  .project-slider2 .single-project-style2 {
-    margin-bottom: 0;
-  }
-
-  .project-slider2 .owl-nav {
-    position: relative;
-    margin-top: 50px;
-    right: 0;
-    top: inherit;
-    justify-content: center;
   }
 
   .testimonial-slider .owl-dots,
@@ -638,9 +608,6 @@
     margin-top: 50px;
   }
 
-  .testimonial-slider2 .owl-nav {
-    top: 12%;
-  }
 
   .single-testimonial-style2 .feedback {
     padding-bottom: 80px;
@@ -670,15 +637,6 @@
     font-size: 48px !important;
     line-height: 60px !important;
   }
-
-  /* .team-fbio-sec .member-fbio,
-  .team-fbio-sec .progressbar-tooltip {
-    margin-left: 0;
-  }
-
-  .team-fbio-sec .team-fbio-hr {
-    margin: 50px 0;
-  } */
 
   .contact-map-sec iframe {
     height: 500px;
@@ -863,30 +821,7 @@
     margin-bottom: 20px;
   }
 
-  .blog-autor-bio {
-    flex-direction: column;
-  }
 
-  .blog-autor-bio .avater-content {
-    text-align: center;
-  }
-
-  .blog-autor-bio .avater-content ul.autor-social {
-    position: relative;
-    justify-content: center;
-    top: inherit;
-    right: inherit;
-    margin-bottom: 4px;
-    margin-top: -8px;
-  }
-
-  .comment-item .post-comment {
-    display: block;
-  }
-
-  .comment-item .post-comment .comment-content {
-    margin-left: 0;
-  }
 
   form.itco-cform .contact-field {
     margin-bottom: 18px;
@@ -998,13 +933,17 @@
     object-fit: cover;
     width: 100%;
   }
-  .new-blog .content-box{
+
+  .new-blog .content-box {
     padding-left: 12px;
   }
-  .new-blog-content .meta-box{
+
+  .new-blog-content .meta-box {
     margin: 5px 0;
   }
-  .new-blog-content .meta-box span, p{
+
+  .new-blog-content .meta-box span,
+  p {
     line-height: 1.2;
   }
 
@@ -1054,14 +993,6 @@
     padding: 8px 28px !important;
   }
 
-  .faq-sec #accordion h4.accordion-title {
-    font-size: 18px;
-    border: 1px solid rgba(56, 56, 56, 0.1);
-  }
-
-  .faq-sec .sec-images .sec-img-one {
-    border-radius: 160px 0;
-  }
 
   .video-sec2 .video-sec-overlay {
     padding: 150px 0;
@@ -1079,10 +1010,6 @@
 
   .single-service-style2 .content-box .single-service-content a.read-more {
     margin-top: 18px;
-  }
-
-  .testimonial-slider2 .owl-nav {
-    display: none;
   }
 
   .single-testimonial-style2 .feedback {
