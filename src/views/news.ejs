@@ -33,8 +33,6 @@
           content="Itco Nextjs 14 Template for agencies, businesses, consulting firms, creative ventures, cybersecurity providers, data management specialists, digital agencies, IT services, IT solutions providers, SaaS companies, software developers, startups, and technology service providers." /> -->
         <link rel="shortcut icon" href="/_assets/images/product/logoTDC.png" type="image/x-icon">
         <meta name="next-size-adjust" />
-
-
         <!-- animation -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
@@ -48,9 +46,8 @@
             <div id="loader"></div>
         </div>
         <%- include('./particals/header.ejs') %>
-            <section id="site-breadcumb"
-                style="background-image: url(&quot;assets/images/breadcumb/breadcumb-bd.svg&quot;);">
-                <div class="site-breadcumb-wrapper">
+            <section id="site-breadcumb">
+                <div class="site-breadcumb-wrapper bg-breadcumb">
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -73,142 +70,114 @@
                         <div class="col-xl-7">
                             <div class="blog-item-wrapper">
                                 <!-- map -->
-                                <div class="blog-left-box blog-item wow fadeInUp" data-wow-delay="0.5s"
-                                    data-wow-duration="1500ms"
-                                    style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.5s;">
+                                <a href="/" class="blog-left-box blog-item">
                                     <div class="img-box">
-                                        <img alt="blog" loading="lazy" decoding="async" data-nimg="1" class="h-100"
+                                        <img alt="blog" decoding="async" data-nimg="1" class="h-100"
                                             src="https://taixecongnghe.com/static/images/interface/image-1712136299319.jpg  ">
                                     </div>
                                     <div class="content-box">
                                         <div class="meta-box">
                                             <ul class="meta-info d-flex">
                                                 <li>
-                                                    <div class="icon"><i class="flaticon-calendar"></i></div>
-                                                    <span><a>October 2, 2023</a></span>
+                                                    <i class="flaticon-calendar"></i>
+                                                    <span>October 2, 2023</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="title-box blog-title">
-                                            <h3><a href="/blog-details">Everything you need to learn about IT Solution
-                                                    for your Company.</a></h3>
+                                            <h3>Everything you need to learn about IT Solution
+                                                for your Company.</h3>
                                         </div>
                                         <div class="blog-body">
-                                            <p class="mt-2">With over a decade of experience, we’ve established
-                                                ourselves as one of the pioneering agencies in the . Our small,
-                                                flexible, agile and design-led structures and processes allow us to be
-                                                highly responsive and innovative. We’re made of passionate leaders,
-                                                strategists, managers, developers, animators designer who work gether
-                                                under one umbrella. We are a digitally-led, full-service creative
-                                                agency.</p>
+                                            <p class="mt-2">Làm thế nào bạn có thể theo dõi thông tin chi tiết về
+                                                tài
+                                                xế, đội xe mọi lúc mọi nơi? Làm thế nào để biết vị trí và lịch trình
+                                                xe
+                                                đang di chuyển? TDC sẽ giúp bạn có cách quản trị và điều hành đội xe
+                                                hiệu quả với thiết bị giám sát hành trình 5G GPS.</p>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-5">
                             <div class="sidebar ms-xl-5">
                                 <div class="sidebar-item">
                                     <div class="blog-recent-post footer-recent-post">
-                                        <ul>
-                                            <li class="blog-sidebar-box-item blog-item d-flex">
-                                                <div class="img-box"><img alt="blog" loading="lazy" decoding="async"
-                                                        data-nimg="1"
-                                                        src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
-                                                        style="color: transparent;"></div>
-                                                <div class="content-box">
-                                                    <div class="meta-box">
-                                                        <ul class="meta-info">
-                                                            <li>
-                                                                <div class="icon"><i class="flaticon-calendar"></i>
-                                                                </div><span><a class="c-black" href="/">Oct 2,
-                                                                        2023</a></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="title-box">
-                                                        <h3 class="c-black"><a href="/">CÔNG NGHỆ ESIM - CÔNG NGHỆ VẬN
-                                                                TẢI HOT TRONG TƯƠNG LAI.</a></h3>
-                                                    </div>
+                                        <a href="/" class="blog-sidebar-box-item blog-item d-flex">
+                                            <div class="img-box"><img alt="blog" width="120" height="120"
+                                                    decoding="async" data-nimg="1"
+                                                    src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
+                                                    style="color: transparent;"></div>
+                                            <div class="content-box">
+                                                <div class="meta-box">
+                                                    <ul class="meta-info">
+                                                        <li>
+                                                            <i class="flaticon-calendar"></i>
+                                                            <span>Oct 2,2023</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                            </li>
-                                            <li class="blog-sidebar-box-item blog-item d-flex">
-                                                <div class="img-box"><img alt="blog" loading="lazy" width="120"
-                                                        height="120" decoding="async" data-nimg="1"
-                                                        src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
-                                                        style="color: transparent;"></div>
-                                                <div class="content-box">
-                                                    <div class="meta-box">
-                                                        <ul class="meta-info">
-                                                            <li>
-                                                                <div class="icon"><i class="flaticon-calendar"></i>
-                                                                </div><span><a class="c-black" href="/">Oct 2,
-                                                                        2023</a></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="title-box">
-                                                        <h3 class="c-black"><a href="/">IT Solution for your
-                                                                Company.</a></h3>
-                                                    </div>
+                                                <div class="title-box">
+                                                    <h3>IT Solution for your
+                                                        Company.</h3>
                                                 </div>
-                                            </li>
-                                            <li class="blog-sidebar-box-item blog-item d-flex">
-                                                <div class="img-box"><img alt="blog" loading="lazy" width="120"
-                                                        height="120" decoding="async" data-nimg="1"
-                                                        src="https://taixecongnghe.com/static/images/interface/image-1712136058514.jpg"
-                                                        style="color: transparent;"></div>
-                                                <div class="content-box">
-                                                    <div class="meta-box">
-                                                        <ul class="meta-info">
-                                                            <li>
-                                                                <div class="icon"><i class="flaticon-calendar"></i>
-                                                                </div><span><a class="c-black" href="/">Oct 2,
-                                                                        2023</a></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="title-box">
-                                                        <h3 class="c-black"><a href="/">IT Solution for your
-                                                                Company.</a></h3>
-                                                    </div>
+                                            </div>
+                                        </a>
+                                        <a href="/" class="blog-sidebar-box-item blog-item d-flex">
+                                            <div class="img-box"><img alt="blog" width="120" height="120"
+                                                    decoding="async" data-nimg="1"
+                                                    src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
+                                                    style="color: transparent;"></div>
+                                            <div class="content-box">
+                                                <div class="meta-box">
+                                                    <ul class="meta-info">
+                                                        <li>
+                                                            <i class="flaticon-calendar"></i>
+                                                            <span>Oct 2,2023</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                            </li>
-                                            <li class="blog-sidebar-box-item blog-item d-flex">
-                                                <div class="img-box"><img alt="blog" loading="lazy" width="120"
-                                                        height="120" decoding="async" data-nimg="1"
-                                                        src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
-                                                        style="color: transparent;"></div>
-                                                <div class="content-box">
-                                                    <div class="meta-box">
-                                                        <ul class="meta-info">
-                                                            <li>
-                                                                <div class="icon"><i class="flaticon-calendar"></i>
-                                                                </div><span><a class="c-black" href="/">Oct 2,
-                                                                        2023</a></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="title-box">
-                                                        <h3 class="c-black"><a href="/">Tăng cường công tác quản lý và
-                                                                xử lý hoạt động vận tải qua thiết bị giám sát hành trình
-                                                                và camera.</a></h3>
-                                                    </div>
+                                                <div class="title-box">
+                                                    <h3>IT Solution for your
+                                                        Company.</h3>
                                                 </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+                                        </a>
+                                        <a href="/" class="blog-sidebar-box-item blog-item d-flex">
+                                            <div class="img-box"><img alt="blog" width="120" height="120"
+                                                    decoding="async" data-nimg="1"
+                                                    src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg"
+                                                    style="color: transparent;"></div>
+                                            <div class="content-box">
+                                                <div class="meta-box">
+                                                    <ul class="meta-info">
+                                                        <li>
+                                                            <i class="flaticon-calendar"></i>
+                                                            <span>Oct 2,2023</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="title-box">
+                                                    <h3>IT Solution for your
+                                                        Company.</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="new-blog">
-                        <h3 class="mb-3">Tin tức mới nhất</h3>
-                        <a class="new-blog-content">
+                        <h3 class="mb-3">Tin tức</h3>
+                        <a href="/" class="new-blog-content">
                             <div class="row">
                                 <div class="img-box col-xl-3 col-12">
                                     <div class="image-box">
-                                        <img alt="blog" loading="lazy" decoding="async" data-nimg="1" class="h-100"
+                                        <img alt="blog" decoding="async" data-nimg="1" class="h-100"
                                             src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg">
                                     </div>
                                 </div>
@@ -233,11 +202,13 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="new-blog-content">
+                        <a href="/" class="new-blog-content">
                             <div class="row">
                                 <div class="img-box col-xl-3 col-12">
-                                    <img alt="blog" loading="lazy" decoding="async" data-nimg="1" class="h-100"
-                                        src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg">
+                                    <div class="image-box">
+                                        <img alt="blog" decoding="async" data-nimg="1" class="h-100"
+                                            src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg">
+                                    </div>
                                 </div>
                                 <div class="content-box col-xl-9 col-12">
                                     <div class="title-box">
@@ -278,6 +249,7 @@
 
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="/_next/static/js/header.js"></script>
     <script src="/_next/static/js/global.js"></script>
 

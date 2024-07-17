@@ -8,7 +8,6 @@ const configViewEngine = require("./config/viewEngines");
 const initWebRoutes = require("./routes");
 const errorHandlingMiddleware = require("./middlewares/errorHandlingMiddleware");
 
-
 //init app
 const app = express();
 
@@ -18,8 +17,8 @@ const port = env.LOCAL_APP_PORT;
 const build_mode = env.BUILD_MODE;
 
 //config view engine for serverside rendering
-configViewEngine(app);
 
+configViewEngine(app);
 
 //config static file ex:css,js,images in public folder
 app.use(express.static(path.join(__dirname, "public")));

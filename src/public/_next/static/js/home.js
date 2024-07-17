@@ -36,29 +36,57 @@ try {
 
 //carousel agent
 try {
-    $(".owl-carousel").owlCarousel({
-        margin: 0,
-        nav:false,
-        responsiveClass: true,
-        dots: false,
-        slideTransition: "linear",
-        autoplay: false,
-        navText: [
-          "<i class='fa fa-chevron-left'></i>",
-          "<i class='fa fa-chevron-right'></i>",
-        ],
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 3,
-            nav: true,
-          },
-          767: {
-            items: 5,
-            nav: true,
-          },
-        },
-      });
+  var owl = $('.owl-carousel');
+  var direction = 'next'; // hướng mặc định là 'next'
+
+  owl.owlCarousel({
+    margin: 0,
+    nav: false,
+    responsiveClass: true,
+    dots: false,
+    autoplay: false, // Tắt autoplay vì chúng ta sẽ tự điều khiển
+    loop: false, // Tắt loop để có thể kiểm tra vị trí
+    slideTransition: 'linear',
+    autoplayTimeout: 1000, // thời gian chờ giữa các lần chuyển slide
+    autoplaySpeed: 20000, // tốc độ chuyển slide
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
+    responsive: {
+      0: {
+        items: 3,
+        nav: true,
+      },
+      767: {
+        items: 5,
+        nav: true,
+      },
+    },
+  });
+
+  function autoplayCarousel() {
+    setInterval(function() {
+      if(direction === 'next') {
+        owl.trigger('next.owl.carousel');
+      } else {
+        owl.trigger('prev.owl.carousel');
+      }
+    }, 2000); // Thời gian giữa các lần trượt, bạn có thể điều chỉnh
+  }
+
+  owl.on('translated.owl.carousel', function(event) {
+    var itemCount = event.item.count; // Số lượng item
+    var currentIndex = event.item.index; // Index hiện tại
+
+    if(currentIndex === (itemCount - event.page.size)) { // Nếu là slide cuối cùng
+      direction = 'prev';
+    } else if(currentIndex === 0) { // Nếu là slide đầu tiên
+      direction = 'next';
+    }
+  });
+
+  autoplayCarousel();
 } catch (error) {
     console.log("error >>", error); 
 }

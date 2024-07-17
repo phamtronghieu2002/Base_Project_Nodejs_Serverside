@@ -25,3 +25,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 700);
 });
   
+//init AOS
+AOS.init();

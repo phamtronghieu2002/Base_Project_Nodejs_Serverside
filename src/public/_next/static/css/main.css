@@ -1841,9 +1841,7 @@ button.swiper-pagination-bullet {
 .page .main-header-two .header-contact-info ul li p a,
 .page .main-header-two .header-social-links ul li a {
     color: var(--thm-white) !important;
-} 
- 
-
+}
 
 .main-header-two .header-contact-info ul li p a:hover,
 .main-header-two .header-social-links ul li a:hover {
@@ -3033,10 +3031,12 @@ label {
 
 .single-service-style2 .content-box {
     padding: 30px;
+    min-height: 315px;
 }
 
 .single-service-style2 .content-box .single-service-content {
     margin-right: 16px;
+    text-align: justify;
 }
 
 .single-service-style2 .content-box .single-service-content h5 {
@@ -4091,13 +4091,14 @@ label {
     margin-right: 6px;
 }
 
-.meta-info span a {
+.meta-info span  {
     color: var(--thm-black);
 }
 
 .blog-item .content-box .title-box h3 {
     font-size: 26px;
     line-height: 38px;
+    color: var(--thm-black);
 }
 
 .blog-item .content-box .btn-box {
@@ -4108,8 +4109,8 @@ label {
     transform: scale(1.1);
 }
 
-.blog-item:hover .title-box a {
-    color: var(--thm-green);
+.blog-item:hover .title-box h3  {
+    color: var(--thm-green) !important;
 }
 
 .blog-left-box .content-box {
@@ -4232,7 +4233,7 @@ label {
     left: 0;
 }
 
-.blog-tags-share {
+/* .blog-tags-share {
     display: flex;
     padding: 26px 0;
     border: solid rgba(56, 56, 56, 0.12);
@@ -4278,7 +4279,7 @@ label {
 .blog-tags-share .blog-share li a:hover {
     background: var(--thm-teal);
     color: var(--thm-white);
-}
+} */
 
 .blog-autor-bio {
     padding: 40px;
@@ -4530,13 +4531,13 @@ label {
     line-height: 25px;
     font-weight: 600;
     margin-bottom: 0;
-    color: var(--thm-white);    
 }
 
 .footer-copyright-text p {
     color: var(--thm-white);
     padding: 30px 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .footer-copyright-text p a {
@@ -4739,7 +4740,7 @@ label {
     color: var(--thm-teal);
 }
 
-.sidebar-item .blog-tags ul {
+/* .sidebar-item .blog-tags ul {
     display: flex;
     flex-wrap: wrap;
     column-gap: 12px;
@@ -4763,7 +4764,7 @@ label {
 
 .sidebar-item .blog-tags ul li a {
     color: var(--thm-black);
-}
+} */
 
 .blog-sidebar-search form {
     padding: 11px 20px;
@@ -4789,7 +4790,7 @@ label {
     width: 100%;
 }
 
-.team-fbio-sec .member-fbio-img {
+/* .team-fbio-sec .member-fbio-img {
     border-radius: 200px 0;
     overflow: hidden;
 }
@@ -4864,7 +4865,7 @@ label {
 
 .team-fbio-sec .progressbar-tooltip {
     margin-left: 76px;
-}
+} */
 
 .error-sec .error-content button {
     margin-top: 60px;
@@ -4900,6 +4901,9 @@ form.itco-sform .contact-field textarea {
     padding: 10px 20px;
 }
 
+
+/*  ===============================================custome css ===========================================*/
+
 iframe {
     border: 0;
     border-radius: 10px;
@@ -4916,10 +4920,6 @@ iframe {
     background-position: center;
     background-size: 750px 450px;
     position: relative;
-}
-
-.product-image {
-    /* width: 60%; */
 }
 
 .app-info-group {
@@ -4953,8 +4953,6 @@ iframe {
 .contact-map-sec {
     overflow: hidden;
 }
-
-/*  ===============================================custome css ===========================================*/
 
 .certificate-slider {
     width: 95%;
@@ -5187,12 +5185,14 @@ body.compensate-for-scrollbar {
     margin: 0 ;
 } 
 
-.blog-body p, .new-blog-content .meta-box p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.blog-body p,
+.new-blog-content .meta-box p,
+.new-blog-content .sub-content-box p  {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .new-blog h3{
     padding-bottom: 10px;
@@ -5239,4 +5239,26 @@ body.compensate-for-scrollbar {
 }
 .new-blog .new-blog-content:hover .title-box h4{
     color: var(--thm-green);
+}
+
+.bg-breadcumb {
+    background: #16a571e6 !important;
+}
+#site-breadcumb {
+    background-image: url('/_assets/images/breadcumb/breadcumb-bd.svg');
+}
+.wrapper-about-us-page .sec-content .sec-text {
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+.wrapper-about-us-page  .about-sec .sec-content{
+    font-size: 1rem;
+}
+.wrapper-about-us-page .sec-images{
+    margin-right: -60px;
+}
+.wrapper-about-us-page .about-sec .sec-images .sec-img-two{
+    bottom: -117px;
+    right: -26px;   
 }

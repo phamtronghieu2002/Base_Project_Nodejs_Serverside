@@ -17,7 +17,9 @@ Router.get("/solution", (req, res) => {
     res.render("solution")
 });
 Router.get("/policy", (req, res) => {
-    res.render("policy")
+    res.render("policy")});
+Router.get("/about-us", (req, res) => {
+    res.render("about-us")
 });
 
 
