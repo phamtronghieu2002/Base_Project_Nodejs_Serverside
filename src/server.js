@@ -7,7 +7,7 @@ const corsOptions = require("./config/cors");
 const configViewEngine = require("./config/viewEngines");
 const initWebRoutes = require("./routes");
 const errorHandlingMiddleware = require("./middlewares/errorHandlingMiddleware");
-
+const expressLayouts = require('express-ejs-layouts');
 
 //init app
 const app = express();
@@ -18,8 +18,10 @@ const port = env.LOCAL_APP_PORT;
 const build_mode = env.BUILD_MODE;
 
 //config view engine for serverside rendering
-configViewEngine(app);
+app.use(expressLayouts);
 
+configViewEngine(app);
+app.set('layout','./layouts/mainLayout');
 
 //config static file ex:css,js,images in public folder
 app.use(express.static(path.join(__dirname, "public")));

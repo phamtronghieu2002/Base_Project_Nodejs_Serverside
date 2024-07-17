@@ -13,6 +13,9 @@ Router.get("/news", (req, res) => {
 Router.get("/news-detail", (req, res) => {
     res.render("news-detail")
 });
+Router.get("/about-us", (req, res) => {
+    res.render("about-us")
+});
 
 
 module.exports = Router;

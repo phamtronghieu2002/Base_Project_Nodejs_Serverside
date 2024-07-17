@@ -1841,9 +1841,7 @@ button.swiper-pagination-bullet {
 .page .main-header-two .header-contact-info ul li p a,
 .page .main-header-two .header-social-links ul li a {
     color: var(--thm-white) !important;
-} 
- 
-
+}
 
 .main-header-two .header-contact-info ul li p a:hover,
 .main-header-two .header-social-links ul li a:hover {
@@ -3033,10 +3031,12 @@ label {
 
 .single-service-style2 .content-box {
     padding: 30px;
+    min-height: 315px;
 }
 
 .single-service-style2 .content-box .single-service-content {
     margin-right: 16px;
+    text-align: justify;
 }
 
 .single-service-style2 .content-box .single-service-content h5 {
@@ -5150,4 +5150,26 @@ body.compensate-for-scrollbar {
 .contact-page-sec .company-social a:hover {
     background: var(--thm-teal);
     color: var(--thm-white);
+}
+
+.bg-breadcumb {
+    background: #16a571e6 !important;
+}
+#site-breadcumb {
+    background-image: url('/_assets/images/breadcumb/breadcumb-bd.svg');
+}
+.wrapper-about-us-page .sec-content .sec-text {
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+.wrapper-about-us-page  .about-sec .sec-content{
+    font-size: 1rem;
+}
+.wrapper-about-us-page .sec-images{
+    margin-right: -60px;
+}
+.wrapper-about-us-page .about-sec .sec-images .sec-img-two{
+    bottom: -117px;
+    right: -26px;   
 }

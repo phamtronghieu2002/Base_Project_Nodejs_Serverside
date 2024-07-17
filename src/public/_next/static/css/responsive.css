@@ -195,7 +195,15 @@
 
 /* mobile */
 @media (max-width: 767px) {
-
+  .text-center-mobile{
+    text-align: center;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .wrapper-about-us-page .sec-images{
+    margin-right: 0px;
+}
   .menu-area .navbar-wrap {
     display: none !important;
   }
@@ -939,8 +947,9 @@
     height: 400px;
   }
   .sec-images .sec-img-one img{
-    height: 300px !important;
-    border-radius: 100px
+    /* height: 300px !important;
+    border-radius: 100px */
+    margin-bottom: 5px;
   }
   .sec-images .sec-img-two img{
     height: 150px !important;
