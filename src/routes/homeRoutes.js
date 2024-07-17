@@ -13,6 +13,12 @@ Router.get("/news", (req, res) => {
 Router.get("/news-detail", (req, res) => {
     res.render("news-detail")
 });
+Router.get("/solution", (req, res) => {
+    res.render("solution")
+});
+Router.get("/policy", (req, res) => {
+    res.render("policy")
+});
 
 
 module.exports = Router;

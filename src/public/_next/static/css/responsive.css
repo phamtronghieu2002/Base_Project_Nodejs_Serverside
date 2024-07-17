@@ -317,6 +317,9 @@
 
   .show-on-mobile {
     display: block !important;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
 
   #sticky-header {
@@ -805,6 +808,7 @@
 
   .sidebar-item:first-child {
     margin-top: 50px;
+    display: none;
   }
 
   .sidebar-item {
@@ -1086,6 +1090,30 @@
   .footer-recent-post .blog-sidebar-box-item .content-box {
     margin: 0 0 0 15px;
   }
+  .scroll-top{
+    position: fixed;
+    right: 10px;
+  }
+  .contact-map iframe {
+    height: 250px;
+  }
+  form.itco-cform .contact-field{
+    margin-bottom: 12px;
+  }
+  .itco-form-btn{
+    text-align: center;
+  }
+  .breadcumb-content h1.breadcumb-title {
+    font-size: 36px;  
+  }
+  .phone-email{
+    display: flex;
+    flex-direction: column !important;
+  }
+  .contact-page-sec .sec-content form{
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 375px) {
