@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
   
 //init AOS
-AOS.init();
+AOS.init(); 

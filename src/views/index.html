@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Slick Slider Syncing Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
-        nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link.active {
-    color: green;
-}
-
+        .slider {
+            width: 600px;
+            margin: 20px auto;
+        }
+        .slider-nav .slick-slide {
+            opacity: 0.5;
+        }
+        .slider-nav .slick-current {
+            opacity: 1;
+        }
+        .slider img, .slider-nav img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="slider fade">
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Slide 1"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Slide 2"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Slide 3"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Slide 4"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Slide 5"></div>
+    </div>
+    <div class="slider slider-nav">
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Thumb 1"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Thumb 2"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Thumb 3"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Thumb 4"></div>
+        <div><img src="https://taixecongnghe.com/static/images/interface/image-1712135949782.jpg" alt="Thumb 5"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        // Get the current URL path
-const currentPath = window.location.pathname;
-
-// Get all nav links
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Loop through each nav link
-navLinks.forEach(link => {
-    // Check if the link's href matches the current path
-    if (link.getAttribute('href') === currentPath) {
-        // Add the 'active' class to the matching link
-        link.classList.add('active');
-    }
-});
-
+        $(document).ready(function(){
+            $('.fade').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.fade',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
     </script>
 </body>
 </html>
