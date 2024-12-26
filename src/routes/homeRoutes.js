@@ -1,26 +1,10 @@
 const express = require("express");
 const Router = express.Router();
+import obj from "~/db/db";
+import * as homeController from "../controllers/homeController";
 
-Router.get("/", (req, res) => {
-    res.render("home")
-});
-Router.get("/contact", (req, res) => {
-    res.render("contact")
-});
-Router.get("/news", (req, res) => {
-    res.render("news")
-});
-Router.get("/news-detail", (req, res) => {
-    res.render("news-detail")
-});
-Router.get("/solution", (req, res) => {
-    res.render("solution")
-});
-Router.get("/policy", (req, res) => {
-    res.render("policy")});
-Router.get("/about-us", (req, res) => {
-    res.render("about-us")
-});
 
+
+Router.get("/", homeController?.initHome);
 
 module.exports = Router;

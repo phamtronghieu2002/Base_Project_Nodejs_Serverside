@@ -3,10 +3,12 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 const path = require("path");
 const env = require("./config/env");
-const corsOptions = require("./config/cors");
 const configViewEngine = require("./config/viewEngines");
 const initWebRoutes = require("./routes");
 const errorHandlingMiddleware = require("./middlewares/errorHandlingMiddleware");
+import obj from './db/db';
+const Router = express.Router();
+import userRoute from './routes/homeRoutes';
 
 //init app
 const app = express();
@@ -28,15 +30,24 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //configs cors
-app.use(cors(corsOptions))
+
+
 
 
 //configs routes
 initWebRoutes(app);
-  
 
 
+Router.get('/lan1', (req, res) => {
+  const x = obj;
+  console.log(x);
 
+  return res.status(200).json({ message: 'Hello Trong Hieu' });
+});
+
+
+app.use(Router)
+app.use(userRoute);
 
 
 
